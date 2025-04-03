@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vennela Pickles - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="mobile.js"></script>
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #FFD700;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-text {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-black text-yellow-300">
+    <!-- Navigation -->
+    <nav class="bg-black text-yellow-300 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="nav-logo">Vennela Pickles</a>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-white px-3 py-2 block">Home</a></li>
+                <li><a href="products.html" class="hover:text-white px-3 py-2 block">Products</a></li>
+                <li><a href="about.html" class="hover:text-white px-3 py-2 block">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-white px-3 py-2 block">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black w-full">
+            <a href="index.html" class="block py-3 px-4 hover:bg-yellow-300 hover:text-black">Home</a>
+            <a href="products.html" class="block py-3 px-4 hover:bg-yellow-300 hover:text-black">Products</a>
+            <a href="about.html" class="block py-3 px-4 hover:bg-yellow-300 hover:text-black">About Us</a>
+            <a href="contact.html" class="block py-3 px-4 hover:bg-yellow-300 hover:text-black">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="https://images.pexels.com/photos/3761597/pexels-photo-3761597.jpeg" 
+             class="w-full h-screen object-cover brightness-75">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-5xl md:text-7xl text-white mb-6" style="font-family: 'Abril Fatface', serif; text-shadow: 3px 3px 0px rgba(0,0,0,0.3);">
+                    VENNELA PICKLES
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8 font-semibold">Authentic homemade pickles since 1995</p>
+                <a href="products.html" 
+                   class="bg-yellow-300 text-black px-8 py-4 rounded-full font-bold hover:bg-yellow-400 transition transform hover:scale-105">
+                    Explore Our Pickles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Pickles Section -->
+    <section class="py-12 bg-black text-yellow-300">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 px-2">Our Special Pickles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-2">
+                <!-- Mango Pickle -->
+                <div class="product-card p-4 rounded-lg shadow-lg transition hover:shadow-xl">
+                    <img src="https://images.pexels.com/photos/3761600/pexels-photo-3761600.jpeg" 
+                         alt="Mango Pickle" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-2xl font-semibold">Mango Pickle</h3>
+                    <p class="text-gray-300 mt-2">Handcrafted with sun-ripened mangoes and traditional spices.</p>
+                    <a href="https://wa.me/917396569686?text=I%20want%20to%20order%20Mango%20Pickle" 
+                       class="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Order on WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Chicken Pickle -->
+                <div class="product-card p-4 rounded-lg shadow-lg transition hover:shadow-xl chicken-pickle-animate">
+                    <img src="https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg" 
+                         alt="Chicken Pickle" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-2xl font-semibold">Chicken Pickle</h3>
+                    <p class="text-gray-300 mt-2">Spicy and flavorful chicken pieces marinated in traditional spices.</p>
+                    <a href="https://wa.me/917396569686?text=I%20want%20to%20order%20Chicken%20Pickle" 
+                       class="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Order on WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Chili Garlic Pickle -->
+                <div class="product-card p-4 rounded-lg shadow-lg transition hover:shadow-xl">
+                    <img src="https://images.pexels.com/photos/3761606/pexels-photo-3761606.jpeg" 
+                         alt="Chili Garlic Pickle" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-2xl font-semibold">Chili Garlic</h3>
+                    <p class="text-gray-300 mt-2">Spicy chilies with garlic for a bold flavor experience.</p>
+                    <a href="https://wa.me/917396569686?text=I%20want%20to%20order%20Chili%20Garlic%20Pickle" 
+                       class="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-yellow-300 py-12 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">About Us</h3>
+                <p class="text-gray-300 mb-2">Vennela Pickles is a family-owned business crafting authentic Indian pickles since 1995.</p>
+                <a href="about.html" class="text-yellow-300 hover:underline">Read More →</a>
+            </div>
+            
+            <!-- Products Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Our Products</h3>
+                <ul class="space-y-2">
+                    <li><a href="products.html#mango" class="hover:underline">Mango Pickle</a></li>
+                    <li><a href="products.html#lemon" class="hover:underline">Lemon Garlic</a></li>
+                    <li><a href="products.html#chili" class="hover:underline">Chili Garlic</a></li>
+                    <li><a href="products.html" class="hover:underline">View All →</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Column -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Stay Updated</h3>
+                <p class="text-gray-300 mb-2">Subscribe for updates and special offers</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email" 
+                           class="flex-grow p-2 rounded-l-lg bg-gray-800 border border-yellow-300">
+                    <button class="bg-yellow-300 text-black px-4 py-2 rounded-r-lg font-bold hover:bg-yellow-400 transition">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="container mx-auto text-center mt-8 pt-6 border-t border-gray-800">
+            <div class="social-icons space-x-4 mb-4">
+                <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-gray-400">© 2023 Vennela Pickles. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
