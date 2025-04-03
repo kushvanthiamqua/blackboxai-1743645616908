@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Vennela Pickles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #FFD700;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+        }
+        .nav-logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .nav-logo:hover {
+            transform: scale(1.05);
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-black text-yellow-300">
+    <!-- Navigation -->
+    <nav class="bg-black text-yellow-300 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="nav-logo">Vennela Pickles</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-white">Home</a></li>
+                <li><a href="products.html" class="hover:text-white">Products</a></li>
+                <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-white font-bold">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-12 container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-center mb-8">Contact Us</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <div class="bg-black border border-yellow-300 rounded-lg p-6">
+                <h2 class="text-2xl font-bold mb-4">Send Us a Message</h2>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 mb-2">Name</label>
+                        <input type="text" class="w-full p-2 bg-gray-800 border border-yellow-300 rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 mb-2">Email</label>
+                        <input type="email" class="w-full p-2 bg-gray-800 border border-yellow-300 rounded">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 mb-2">Message</label>
+                        <textarea class="w-full p-2 bg-gray-800 border border-yellow-300 rounded" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="bg-yellow-300 text-black px-6 py-2 rounded font-bold hover:bg-yellow-400 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="bg-black border border-yellow-300 rounded-lg p-6">
+                <h2 class="text-2xl font-bold mb-4">Our Information</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-yellow-300 mt-1 mr-3"></i>
+                        <p>123 Pickle Street, Hyderabad, Telangana 500001</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-yellow-300 mr-3"></i>
+                        <p>+91 7396569686</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-yellow-300 mr-3"></i>
+                        <p>orders@vennelapickles.com</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fab fa-whatsapp text-yellow-300 mr-3"></i>
+                        <a href="https://wa.me/917396569686" class="hover:underline">Chat on WhatsApp</a>
+                    </div>
+                </div>
+                
+                <h3 class="text-xl font-bold mt-8 mb-4">Business Hours</h3>
+                <ul class="space-y-2">
+                    <li class="flex justify-between">
+                        <span>Monday - Friday</span>
+                        <span>9:00 AM - 6:00 PM</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Saturday</span>
+                        <span>10:00 AM - 4:00 PM</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Sunday</span>
+                        <span>Closed</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-yellow-300 py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>© 2023 Vennela Pickles. All rights reserved.</p>
+            <div class="social-icons mt-4 space-x-4">
+                <a href="#" class="text-2xl hover:text-white"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
