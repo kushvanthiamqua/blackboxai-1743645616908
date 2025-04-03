@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Vennela Pickles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #FFD700;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #FFD700;
+        }
+    </style>
+</head>
+<body class="bg-black text-yellow-300">
+    <!-- Navigation -->
+    <nav class="bg-black text-yellow-300 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="nav-logo">Vennela Pickles</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="hover:text-white">Home</a></li>
+                <li><a href="products.html" class="hover:text-white">Products</a></li>
+                <li><a href="about.html" class="hover:text-white font-bold">About Us</a></li>
+                <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="py-20 bg-black bg-opacity-90">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Story</h1>
+            <p class="text-xl max-w-3xl mx-auto">Traditional recipes passed down through generations, crafted with love and authentic spices</p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-16 container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">From Humble Beginnings</h2>
+                <p class="mb-6 text-gray-300">Founded in 1995 by Mrs. Vennela Reddy, our pickles started as a small home kitchen operation serving just our local community in Hyderabad.</p>
+                <p class="text-gray-300">What began as sharing extra batches with neighbors quickly grew into a beloved local brand, thanks to our commitment to authentic recipes and high-quality ingredients.</p>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/38271/ipad-map-comics-travel-38271.jpeg" 
+                     class="w-full h-auto object-cover" 
+                     alt="Old family recipe book">
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-16 bg-black bg-opacity-80">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Our Journey</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item relative pl-8 mb-8">
+                    <div class="absolute left-0 w-4 h-4 bg-yellow-300 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-2">1995 - Foundation</h3>
+                    <p class="text-gray-300">Started making pickles using family recipes in small batches</p>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item relative pl-8 mb-8">
+                    <div class="absolute left-0 w-4 h-4 bg-yellow-300 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-2">2002 - First Shop</h3>
+                    <p class="text-gray-300">Opened our first physical store in Hyderabad</p>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item relative pl-8 mb-8">
+                    <div class="absolute left-0 w-4 h-4 bg-yellow-300 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-2">2010 - State Recognition</h3>
+                    <p class="text-gray-300">Awarded "Best Traditional Pickles" by Telangana Food Authority</p>
+                </div>
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-yellow-300 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-2">2020 - National Reach</h3>
+                    <p class="text-gray-300">Started shipping our pickles across India through e-commerce</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-12 text-center">Meet Our Family</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Team Member 1 -->
+            <div class="text-center">
+                <div class="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-300">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" 
+                         class="w-full h-full object-cover"
+                         alt="Mrs. Vennela Reddy">
+                </div>
+                <h3 class="text-xl font-bold">Mrs. Vennela Reddy</h3>
+                <p class="text-gray-300">Founder & Master Chef</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="text-center">
+                <div class="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-300">
+                    <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg" 
+                         class="w-full h-full object-cover"
+                         alt="Rajesh Reddy">
+                </div>
+                <h3 class="text-xl font-bold">Rajesh Reddy</h3>
+                <p class="text-gray-300">Operations Manager</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="text-center">
+                <div class="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-300">
+                    <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg" 
+                         class="w-full h-full object-cover"
+                         alt="Priya Reddy">
+                </div>
+                <h3 class="text-xl font-bold">Priya Reddy</h3>
+                <p class="text-gray-300">Quality Control</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-yellow-300 py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p>© 2023 Vennela Pickles. All rights reserved.</p>
+            <div class="social-icons mt-4 space-x-4">
+                <a href="#" class="text-2xl hover:text-white"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
